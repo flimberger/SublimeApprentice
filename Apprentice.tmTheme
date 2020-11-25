@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Apprentice</string>
+
+    <key>author</key>
+    <string>Florian Limberger</string>
+
+    <key>settings</key>
+    <array>
+      <!-- Global -->
+      <dict>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#262626</string>
+          <key>foreground</key>
+          <string>#bcbcbc</string>
+          <key>caret</key>
+          <string>#6c6c6c</string>
+          <key>lineHighlight</key>
+          <string>#303030</string>
+          <!-- Selection -->
+          <key>selection</key>
+          <string>#8fafd7</string>
+          <key>selectionForeground</key>
+          <string>#262626</string>
+          <!-- Find highlights -->
+          <key>highlight</key>
+          <string>#ffffaf</string>
+          <key>findHighlight</key>
+          <string>#ffffaf</string>
+          <key>findHighlightForeground</key>
+          <string>#262626</string>
+          <!-- brackets -->
+          <key>bracketsOptions</key>
+          <string>foreground</string>
+          <key>bracketsForeground</key>
+          <string>#ffffaf</string>
+          <!-- Gutter -->
+          <key>gutter</key>
+          <string>#1c1c1c</string>
+          <key>gutterForeground</key>
+          <string>#6c6c6c</string>
+        </dict>
+      </dict>
+
+      <!-- Comments -->
+      <dict>
+        <key>name</key>
+        <string>Comment</string>
+        <key>scope</key>
+        <string>comment, punctuation.definition.comment</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#6c6c6c</string>
+        </dict>
+      </dict>
+
+      <!-- String literals -->
+      <dict>
+        <key>name</key>
+        <string>String</string>
+        <key>scope</key>
+        <string>string</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#87af87</string>
+        </dict>
+      </dict>
+
+      <!-- Keyword -->
+      <dict>
+        <key>name</key>
+        <string>Keyword</string>
+        <key>scope</key>
+        <string>keyword</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8fafd7</string>
+        </dict>
+      </dict>
+      <!-- Operators should have normal colour,
+           unless they are words -->
+      <dict>
+        <key>name</key>
+        <string>Operators</string>
+        <key>scope</key>
+        <string>keyword.operator</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#bcbcbc</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Word Operators</string>
+        <key>scope</key>
+        <string>keyword.operator.word</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8fafd7</string>
+        </dict>
+      </dict>
+      <!-- The default Python highlighter classifies its word operators wrong,
+           so work around this behaviour -->
+      <dict>
+        <key>name</key>
+        <string>Word Operators</string>
+        <key>scope</key>
+        <string>keyword.operator.logical.python</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8fafd7</string>
+        </dict>
+      </dict>
+
+      <!-- Storage specifiers -->
+      <dict>
+        <key>name</key>
+        <string>Storage</string>
+        <key>scope</key>
+        <string>storage</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8787af</string>
+        </dict>
+      </dict>
+
+      <!-- Constants -->
+      <dict>
+        <key>name</key>
+        <string>Built-in constant</string>
+        <key>scope</key>
+        <string>constant</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ff8700</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Escape character constant</string>
+        <key>scope</key>
+        <string>constant.character.escape, constant.other.placeholder</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5f875f</string>
+        </dict>
+      </dict>
+
+      <!-- Function definitions -->
+      <dict>
+        <key>name</key>
+        <string>Function definition</string>
+        <key>scope</key>
+        <string>entity.name.function</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ffffaf</string>
+        </dict>
+      </dict>
+
+      <!-- Preprocessor statements -->
+      <dict>
+        <key>name</key>
+        <string>Preprocessor statements</string>
+        <key>scope</key>
+        <string>meta.preprocessor</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5f8787</string>
+        </dict>
+      </dict>
+
+      <!-- XML Tags -->
+      <dict>
+        <key>name</key>
+        <string>Tag name</string>
+        <key>scope</key>
+        <string>entity.name.tag, punctuation.definition.tag</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8fafd7</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Tag attribute</string>
+        <key>scope</key>
+        <string>entity.other.attribute-name</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8fafd7</string>
+        </dict>
+      </dict>
+
+      <!-- Markup highlighting -->
+
+      <!-- Headings -->
+      <dict>
+        <key>name</key>
+        <string>Headings</string>
+        <key>scope</key>
+        <string>markup.heading</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ffffff</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Heading Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.heading</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5f875f</string>
+        </dict>
+      </dict>
+
+      <!-- Lists -->
+      <dict>
+        <key>name</key>
+        <string>List Bullets</string>
+        <key>scope</key>
+        <string>markup.list.numbered.bullet, markup.list.unnumbered.bullet</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#8fafd7</string>
+        </dict>
+      </dict>
+
+      <!-- Quotes -->
+      <dict>
+        <key>name</key>
+        <string>Quotes</string>
+        <key>scope</key>
+        <string>markup.quote</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#6c6c6c</string>
+        </dict>
+      </dict>
+
+      <!-- Text styles -->
+      <dict>
+        <key>name</key>
+        <string>Styles</string>
+        <key>scope</key>
+        <string>markup.italic, markup.bold, markup.strikethrough</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5f8787</string>
+        </dict>
+      </dict>
+
+      <!-- Raw -->
+      <dict>
+        <key>name</key>
+        <string>Raw Punctuation</string>
+        <key>scope</key>
+        <string>punctuation.definition.raw</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5f875f</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Raw Punctuation</string>
+        <key>scope</key>
+        <string>markup.raw.inline</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#5f875f</string>
+        </dict>
+      </dict>
+
+
+      <!-- Links and images -->
+      <dict>
+        <key>name</key>
+        <string>Link and Image Description</string>
+        <key>scope</key>
+        <string>meta.link.inline.description, meta.image.inline.description</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ffffaf</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
+        <string>Link and Image URI</string>
+        <key>scope</key>
+        <string>meta.link.inline markup.underline.link, meta.image.inline markup.underline.link</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#ff8700</string>
+        </dict>
+      </dict>
+
+    </array>
+  </dict>
+</plist>
